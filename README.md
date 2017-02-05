@@ -13,7 +13,19 @@ This is a simple REPL for the Swift LISP interpreter described in [this article]
 
 ## Usage
 
-Pod install, compile and run.
+Compile with `swift build` and run.
+
+```bash
+$ ./.build/debug/SwiftyLISP-REPL
+
+>>> (atom A)
+true 
+>>> (atom ())
+()
+>>> (car ( cdr  ( quote (1 2 \"aaaa\"   4 5 true 6 7 () ))))
+2 
+>>> exit
+```
 
 ## License
 
