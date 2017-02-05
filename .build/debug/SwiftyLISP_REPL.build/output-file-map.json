@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mainuser/tmp/SwiftyLISP-REPL/.build/debug/SwiftyLISP_REPL.build/master.swiftdeps"
+  },
+  "/Users/mainuser/tmp/SwiftyLISP-REPL/Sources/main.swift": {
+    "dependencies": "/Users/mainuser/tmp/SwiftyLISP-REPL/.build/debug/SwiftyLISP_REPL.build/main.d",
+    "object": "/Users/mainuser/tmp/SwiftyLISP-REPL/.build/debug/SwiftyLISP_REPL.build/main.swift.o",
+    "swiftmodule": "/Users/mainuser/tmp/SwiftyLISP-REPL/.build/debug/SwiftyLISP_REPL.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/mainuser/tmp/SwiftyLISP-REPL/.build/debug/SwiftyLISP_REPL.build/main.swiftdeps"
+  }
+}

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "d8bf6126c84d524a4766c985e575e023"
+build_time: [539647040, 802164000]
+inputs:
+  "/Users/mainuser/tmp/SwiftyLISP-REPL/Sources/main.swift": !dirty [539646144, 0]

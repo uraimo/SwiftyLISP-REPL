@@ -13,7 +13,7 @@ This is a simple REPL for the Swift LISP interpreter described in [this article]
 
 ## Usage
 
-Compile and run.
+Pod install, compile and run.
 
 ## License
 
