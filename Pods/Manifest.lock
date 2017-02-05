@@ -1,0 +1,12 @@
+PODS:
+  - SwiftyLisp (1.0.3)
+
+DEPENDENCIES:
+  - SwiftyLisp
+
+SPEC CHECKSUMS:
+  SwiftyLisp: d4051d89cd3c8ea0c83e51933fe130aa37160ca5
+
+PODFILE CHECKSUM: ef039267ac034073a9e4cccfa4634ec0b8b8f96e
+
+COCOAPODS: 1.2.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32600503D9DC19449B325E2A /* Pods_SwiftyLISP_REPL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6758EDA969C681044DF6D5BA /* Pods_SwiftyLISP_REPL.framework */; };
 		460D33021E47CC2100478AB2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D33011E47CC2100478AB2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		460D32FE1E47CC2100478AB2 /* SwiftyLISP-REPL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SwiftyLISP-REPL"; sourceTree = BUILT_PRODUCTS_DIR; };
 		460D33011E47CC2100478AB2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		51B45A0F9C3FFAFA6DE1413B /* Pods-SwiftyLISP-REPL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLISP-REPL.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyLISP-REPL/Pods-SwiftyLISP-REPL.release.xcconfig"; sourceTree = "<group>"; };
+		6758EDA969C681044DF6D5BA /* Pods_SwiftyLISP_REPL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLISP_REPL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F63F8ADCBC910D135DDE153 /* Pods-SwiftyLISP-REPL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLISP-REPL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyLISP-REPL/Pods-SwiftyLISP-REPL.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32600503D9DC19449B325E2A /* Pods_SwiftyLISP_REPL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,8 @@
 			children = (
 				460D33001E47CC2100478AB2 /* SwiftyLISP-REPL */,
 				460D32FF1E47CC2100478AB2 /* Products */,
+				7E63DCB567430740527DE30B /* Pods */,
+				AFA7CAB20A42608DCE0693B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,23 @@
 			path = "SwiftyLISP-REPL";
 			sourceTree = "<group>";
 		};
+		7E63DCB567430740527DE30B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F63F8ADCBC910D135DDE153 /* Pods-SwiftyLISP-REPL.debug.xcconfig */,
+				51B45A0F9C3FFAFA6DE1413B /* Pods-SwiftyLISP-REPL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFA7CAB20A42608DCE0693B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6758EDA969C681044DF6D5BA /* Pods_SwiftyLISP_REPL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -69,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 460D33051E47CC2100478AB2 /* Build configuration list for PBXNativeTarget "SwiftyLISP-REPL" */;
 			buildPhases = (
+				496F4DDAD00E524C2C65DC64 /* [CP] Check Pods Manifest.lock */,
 				460D32FA1E47CC2100478AB2 /* Sources */,
 				460D32FB1E47CC2100478AB2 /* Frameworks */,
 				460D32FC1E47CC2100478AB2 /* CopyFiles */,
+				419A6CB64A911639313F072D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -114,6 +140,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		419A6CB64A911639313F072D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyLISP-REPL/Pods-SwiftyLISP-REPL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		496F4DDAD00E524C2C65DC64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		460D32FA1E47CC2100478AB2 /* Sources */ = {
@@ -217,6 +276,7 @@
 		};
 		460D33061E47CC2100478AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F63F8ADCBC910D135DDE153 /* Pods-SwiftyLISP-REPL.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -225,6 +285,7 @@
 		};
 		460D33071E47CC2100478AB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B45A0F9C3FFAFA6DE1413B /* Pods-SwiftyLISP-REPL.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

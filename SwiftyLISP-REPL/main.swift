@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+var exit = false
 
+
+while(!exit){
+    
+    print(">>>", terminator:" ")
+    let input = readLine(strippingNewline: true)
+    exit = (input=="exit") ? true : false
+}

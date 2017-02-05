@@ -1,0 +1,6 @@
+framework module SwiftyLisp {
+  umbrella header "SwiftyLisp-umbrella.h"
+
+  export *
+  module * { export * }
+}
