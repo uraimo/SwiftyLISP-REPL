@@ -9,7 +9,7 @@
 
 ## Summary
 
-This is a simple REPL for the Swift LISP interpreter described in [this article](https://www.uraimo.com/2017/02/06/building-a-lisp-from-scratch-with-swift/).
+This is a simple REPL for the Swift LISP interpreter described in [this article](https://www.uraimo.com/2017/02/05/building-a-lisp-from-scratch-with-swift/).
 
 ## Usage
 
